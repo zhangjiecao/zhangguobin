@@ -16,7 +16,7 @@ public class ShopController {
 	@Resource
 	private ShopService service;
 	
-	@RequestMapping("list.do")
+	@RequestMapping("/list.do")
 	public String list(ModelMap map){
 		List<Shop> list = service.list();
 		map.put("list", list);
